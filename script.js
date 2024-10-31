@@ -1,4 +1,4 @@
-
+document.addEventListener('DOMContentLoaded', function() {
     var modal = document.getElementById("myModal");
     
     var btn = document.getElementById("myBtn");
@@ -18,3 +18,5 @@
         modal.style.display = "none";
       }
     }
+      console.log("DOM is fully loaded"); 
+});
