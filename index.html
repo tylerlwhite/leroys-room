@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
-    <script scr="script.js"></script>
+    <link rel="stylesheet" href="/style.css"/>
+    <script scr="/script.js"></script>
 </head>
 <body>
     <div class="bedroom">
@@ -13,11 +13,18 @@
         <button id="myBtn" class="bed">
             <img src="assets/bed.png" alt="bed">
         </button>
-        <div id="myBtn" class="bedside-table">
+        <a class="bedside-table" href="#modal1">
             <img src="assets/table.png" alt="table">
+            <div class="popup" id="modal1">
+                <a class="popup__overlay" href="#"></a>
+                <div class="popup__wrapper">
+                  <a class="popup__close" href="#">X</a>
+                  <p>My journal is missing...</p>
+                </div>
+            </div>
             <div class="journal"></div>
-        </div>
-        <div id="myBtn" class="desk">
+          </a>
+        <div class="desk">
             <img src="assets/desk.png" alt="desk">
             <div class="laptop"></div>
             <div class="note"></div>
@@ -25,7 +32,7 @@
               <img src="assets/trashcan.png" alt="trashcan">
             </div>
         </div>
-        <div id="myBtn" class="rug">
+        <div class="rug">
           <img src="assets/Rug.png" alt="rug">
         </div>
         <div class="dresser"></div>
@@ -34,14 +41,12 @@
             <div class="AC"></div>
         </div>
         <div class="plant"></div>
-        <div id="myBtn" class="bookshelf">
+        <div class="bookshelf">
           <img src="assets/bookshelf.png" alt="bookshelf">
         </div>
     </div>
 
-<!-- The Modal -->
 <div id="myModal" class="modal">
-    <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
       <p>Thanks for waking me up I slept in. Welcome to my bedroom. Snoop around to explore my work and clutter.</p>
@@ -57,33 +62,27 @@
   
 </div>
 
-<script>
-    // Get the modal
+<!-- <script>
     var modal = document.getElementById("myModal");
     
-    // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
     
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
     
-    // When the user clicks the button, open the modal 
     btn.onclick = function() {
       modal.style.display = "block";
     }
     
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";
     }
     
-    // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
       if (event.target == modal) {
         modal.style.display = "none";
       }
     }
-    </script>
+</script> -->
 
 </body>
 </html>
