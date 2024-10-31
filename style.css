@@ -6,6 +6,7 @@ body {
 .bedroom {
     height: 100vh;
     width: 100vw;
+    background-image: url(assets/floor.png)
     /* position: relative; */
     /* box-sizing: border-box;
     border: 30px solid transparent;
@@ -14,22 +15,19 @@ body {
     border-image-repeat: round; */
 }
 
-.wall {
-
-}
-
 .bed {
     float: right;
-    height: 250px;
-    width: 150px;
-    background-color: purple;
+    /* height: 250px;
+    width: 150px; */
+    background-color: transparent;
+    border: none;
 }
 .bedside-table {
     float: right;
     margin-right: 10px;
-    height: 75px;
+    /* height: 75px;
     width: 75px;
-    background-color: #32a852;
+    background-color: #32a852; */
 }
 
 .desk {
@@ -37,21 +35,19 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 200px;
-    width: 125px;
+    /* height: 200px;
+    width: 125px; */
     margin-bottom: 30px;
-    background-color: bisque;
 }
 
 .trash-can {
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 40px;
-    width: 40px;
+    /* height: 40px;
+    width: 40px; */
     border-radius: 50%;
-    margin-bottom: 210px;
-    background-color: dimgrey;
+    margin-bottom: 150px;
 
 }
 
@@ -60,7 +56,15 @@ body {
     height: 30px;
     width: 20%;
     margin-right: 10px;
-    background-color: brown;
+    /* background-color: brown; */
+}
+
+.rug {
+    position: absolute;
+    right: 1;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 30px;
 }
 
 /* The Modal (background) */
