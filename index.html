@@ -1,88 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css"/>
-    <script src="/script.js"></script>
-</head>
-<body>
-    <div class="bedroom">
-        <div class="wall"></div>
-        <button id="myBtn" class="bed">
-            <img src="assets/bed.png" alt="bed">
-        </button>
-        <a class="bedside-table" href="#modal1">
-            <img src="assets/table.png" alt="table">
-            <div class="popup" id="modal1">
-                <a class="popup__overlay" href="#"></a>
-                <div class="popup__wrapper">
-                  <a class="popup__close" href="#">X</a>
-                  <p>My journal is missing...</p>
-                </div>
-            </div>
-            <div class="journal"></div>
-          </a>
-        <div class="desk">
-            <img src="assets/desk.png" alt="desk">
-            <div class="laptop"></div>
-            <div class="note"></div>
-            <div class="trash-can">
-              <img src="assets/trashcan.png" alt="trashcan">
-            </div>
-        </div>
-        <div class="rug">
-          <img src="assets/Rug.png" alt="rug">
-        </div>
-        <div class="dresser"></div>
-        <div class="door"></div>
-        <div class="window">
-            <div class="AC"></div>
-        </div>
-        <div class="plant"></div>
-        <div class="bookshelf">
-          <img src="assets/bookshelf.png" alt="bookshelf">
-        </div>
-    </div>
 
-<div id="myModal" class="modal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js"></script>
+</head>
+
+<body>
+  <div class="bedroom">
+    <div class="wall"></div>
+    <button id="bed-btn" class="bed">
+      <img src="assets/bed.png" alt="bed">
+    </button>
+    <a class="bedside-table" href="#modal1">
+      <img src="assets/table.png" alt="table">
+      <div class="popup" id="modal1">
+        <a class="popup__overlay" href="#"></a>
+        <div class="popup__wrapper">
+          <a class="popup__close" href="#">X</a>
+          <p>My journal is missing...</p>
+        </div>
+      </div>
+      <div class="journal"></div>
+    </a>
+    <div id="desk-btn" class="desk">
+      <img src="assets/desk.png" alt="desk">
+      <div class="laptop"></div>
+      <div class="note"></div>
+      <div id="trash-can-btn" class="trash-can">
+        <img src="assets/trashcan.png" alt="trashcan">
+      </div>
+    </div>
+    <div id="rug-btn" class="rug">
+      <img src="assets/Rug.png" alt="rug">
+    </div>
+    <div class="dresser"></div>
+    <div class="door"></div>
+    <div class="window">
+      <div class="AC"></div>
+    </div>
+    <div class="plant"></div>
+    <div id="bookshelf-btn" class="bookshelf">
+      <img src="assets/bookshelf.png" alt="bookshelf">
+    </div>
+  </div>
+
+  <div id="bed-modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <p>Thanks for waking me up I slept in. Welcome to my bedroom. Snoop around to explore my work and clutter.</p>
 
       <p>A note on the state of things:</p>
-        
-      <p>My room is pretty sparse right now. I just moved in, and I am still working on my responsive furniture design skills. Eventually I am going to craft some prettier stuff or at least head to the discount sprite warehouse store.</p>
-        
+
+      <p>My room is pretty sparse right now. I just moved in, and I am still working on my responsive furniture design
+        skills. Eventually I am going to craft some prettier stuff or at least head to the discount sprite warehouse
+        store.</p>
+
       <p>Future updates will include:</p>
-      
-      <p>A bookshelf with my writing and some of my favorite works from others, an arts and crafts area where my visual portfolio will exist, open access to my diary and deepest secrets, access to my laptop to view the rest of my work, and a a trash can</p>
+
+      <p>A bookshelf with my writing and some of my favorite works from others, an arts and crafts area where my visual
+        portfolio will exist, open access to my diary and deepest secrets, access to my laptop to view the rest of my
+        work, and a a trash can</p>
     </div>
-  
+
+  </div>
+
+  <div id="table-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>My desk is a little messy, that coffee has been sitting there for a few days.</p>
+
+      <p>A note on the state of things:</p>
+
+      <p>My room is pretty sparse right now. I just moved in, and I am still working on my responsive furniture design
+        skills. Eventually I am going to craft some prettier stuff or at least head to the discount sprite warehouse
+        store.</p>
+
+      <p>Future updates will include:</p>
+
+      <p>A bookshelf with my writing and some of my favorite works from others, an arts and crafts area where my visual
+        portfolio will exist, open access to my diary and deepest secrets, access to my laptop to view the rest of my
+        work, and a a trash can</p>
+    </div>
+  </div>
+
+  <div id="desk-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Definitely some work to be done...</p>
+    </div>
 </div>
 
-<!-- <script>
-    var modal = document.getElementById("myModal");
-    
-    var btn = document.getElementById("myBtn");
-    
-    var span = document.getElementsByClassName("close")[0];
-    
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-</script> -->
+<div id="trash-modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Forgotten dreams</p>
+  </div>
+</div>
+
+<div id="rug-modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p></p>
+      <img src="https://transform.octanecdn.com/cdn/https://octanecdn.com/zrengine/zrengine_259733484.png" alt="carpet-beetle">
+  </div>
+</div>
+
+<div id="bookshelf-modal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>The bookshelf has two books: Twilight New Moon and the Holy Bible...</p>
+  </div>
+</div>
 
 </body>
+
 </html>
